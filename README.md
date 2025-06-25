@@ -18,11 +18,7 @@ The cube root is approximated using the Newton-Raphson method, which iteratively
 x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}
 \]
 
-In this case, to find \( \sqrt[3]{x} \), we solve \( f(y) = y^3 - x \), which gives:
-
-\[
-x_{k+1} = \frac{2x_k}{3} + \frac{x}{3x_k^2}
-\]
+$\sqrt{3x-1}+(1+x)^2$
 
 The algorithm starts with \( x_0 = x / 3 \) and repeats the formula 1000 times for high precision. All calculations are performed using x86 FPU instructions.
 
