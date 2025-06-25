@@ -20,6 +20,9 @@ The algorithm starts with $x_0 = x / 3$ and repeats the formula 1000 times for h
 
 ## Examples
 
+![Exemplary input](images/examples.png)
+
+
 ## 📂 Files
 
 - `cuberoot.c`: Main C program handling input/output and calling the cube root function.
@@ -33,5 +36,5 @@ The algorithm starts with $x_0 = x / 3$ and repeats the formula 1000 times for h
 ## ⚙️ Compilation (Windows, via command line)
 
 ```bash
-nasm -f win32 pierwiastek.asm -o pierwiastek.obj
-gcc pierwiastek.c pierwiastek.obj -o pierwiastek.exe -lm
+nasm -f win32 cuberoot.asm -o cuberoot.obj
+gcc -m32 cuberoot.c cuberoot.obj -o cuberoot.exe
