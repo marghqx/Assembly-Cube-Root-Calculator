@@ -14,9 +14,7 @@ This is a simple console application written in C with an x86 Assembly subroutin
 
 The cube root is approximated using the Newton-Raphson method, which iteratively solves equations of the form:
 
-\[
-x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}
-\]
+$\[x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}\]
 
 $\sqrt{3x-1}+(1+x)^2$
 
