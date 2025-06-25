@@ -2,7 +2,7 @@
 
 This is a simple console application written in C with an x86 Assembly subroutine. It calculates the cube root of a given floating-point number using the Newton-Raphson method.
 
-## 🛠 Features
+## Features
 
 - Accepts user input for a float `x`.
 - Computes the cube root of `x` using a custom `cuberoot()` function written in NASM assembly.
@@ -10,7 +10,7 @@ This is a simple console application written in C with an x86 Assembly subroutin
 - Input validation and graceful error handling.
 - Option to repeat or exit after each computation.
 
-## 🔁 Iteration Algorithm
+## Iteration Algorithm
 
 The cube root is approximated using the Newton-Raphson method, which iteratively solves equations of the form:
 
@@ -23,17 +23,17 @@ The algorithm starts with $x_0 = x / 3$ and repeats the formula 1000 times for h
 ![Exemplary input](images/examples.png)
 
 
-## 📂 Files
+## Files
 
 - `cuberoot.c`: Main C program handling input/output and calling the cube root function.
 - `cuberoot.asm`: NASM assembly function implementing the cube root calculation.
 
-## 🧪 Requirements
+## Requirements
 
 - GCC (MinGW for Windows)
 - NASM assembler
 
-## ⚙️ Compilation (Windows, via command line)
+## Compilation (Windows, via command line)
 
 ```bash
 nasm -f win32 cuberoot.asm -o cuberoot.obj
